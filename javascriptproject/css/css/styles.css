@@ -1,0 +1,16 @@
+body{
+    font-family: 'Didact Gothic', sans-serif; 
+    color: #0e0e0e; 
+    background-color: #ebe5d9;
+    line-height: 1.6; 
+    font-size: 40px;
+    text-align: left;
+}
+
+.slaking{
+    height: auto;
+    width: 150px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
