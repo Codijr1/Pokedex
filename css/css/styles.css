@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'pokemonfont';
+    src: url(/css/css/pokemonfont.ttf);
+}
+
+body{
+    font-family: 'pokemonfont';
+    color: #0e0e0e; 
+    background-color: #ebe5d9;
+    line-height: 1.6; 
+    font-size: 40px;
+    text-align: left;
+}
+
+.slaking{
+    height: auto;
+    width: 150px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+/*button styles*/
+.button{
+    font-family: inherit;
+    width: 150;
+    height: auto;
+    background-color: #dec69f;
+    border-color: #d95939;
+    border-radius: 10px;
+    transition: .045s;
+}
+.button:hover{
+    scale: 1.05;
+    cursor: pointer;
+}
+.button:active{
+    scale: 1.015;
+}
+
+.htmlpokemonlist{
+    list-style-type: none;
+}
