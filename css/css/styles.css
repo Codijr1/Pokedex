@@ -23,11 +23,11 @@ body{
 /*button styles*/
 .button{
     font-family: inherit;
-    width: 150;
-    height: auto;
+    width: auto;
+    height: 35px;
     background-color: #dec69f;
     border-color: #d95939;
-    border-radius: 10px;
+    border-radius: 20px;
     transition: .045s;
 }
 .button:hover{
