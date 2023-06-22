@@ -58,9 +58,12 @@ function loadDetails(item) {
 //showDetails function
 function showDetails(pokemon) {
   loadDetails(pokemon).then(function () {
-    console.log(pokemon);
+    showModal();
   });
 }
+//showModal function
+
+
 
 //allows data to be accessed outside of this 
     return{
@@ -73,6 +76,7 @@ function showDetails(pokemon) {
   }
 })();
 
+//Displays Modal Window
 
 //function allowing the data from the API to be loaded into the array
 pokemonRepository.loadList().then(function() {
@@ -86,7 +90,7 @@ pokemonRepository.getAll().forEach(function(pokemon) {
   pokemonRepository.addListItem(pokemon);
 });
 
-
 /*
 notes
+
 */

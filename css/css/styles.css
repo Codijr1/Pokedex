@@ -10,21 +10,28 @@ body{
     line-height: 1.6; 
     font-size: 40px;
     text-align: left;
+    height: 100vh;
+    overflow-y: hidden;
+    margin: 0;
+    min-width: 450px;
 }
 
 .slaking{
-    height: auto;
-    width: 150px;
     position: fixed;
+    height: auto;
+    width: 30vw;
+    max-width: 250px;
+    min-width: 150px;
     right: 10px;
     bottom: 10px;
+    padding-right: 2px;
 }
 
-/*button styles*/
+/*BUTTON STYLES*/
 .button{
     font-family: inherit;
-    width: auto;
-    height: 35px;
+    width: 186px;
+    height: 64px;
     background-color: #dec69f;
     border-color: #d95939;
     border-radius: 20px;
@@ -37,7 +44,51 @@ body{
 .button:active{
     scale: 1.015;
 }
-
+/*LIST OF POKEMON*/
 .htmlpokemonlist{
+    position: relative;
     list-style-type: none;
+    overflow-y: scroll;
+    padding-left: 10px;
+    margin: 0;
+    height: 100vh;
+}
+
+/*MODAL WINDOW*/
+#modal-container{
+    display: none;
+}
+#modal-container.visible{
+    position: fixed;
+    padding: 20px;
+    box-sizing: border-box;
+    top: 5%;
+    right: 5%;
+    width: 70%;
+    max-width: 650px;
+    height: 60%;
+    color: #0e0e0e;
+    background: #0e0e0e4d;
+    border-radius: 5px;
+    z-index: 999; 
+    overflow: hidden; 
+    display: grid;
+    text-align: center;
+}
+.modal-content{
+    position: relative;
+    background-color:#0e0e0e4d;
+    padding: 20px;
+    border-radius: 5px;
+    max-height: 80%;
+    overflow: hidden;
+}
+.modal-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.modal-close:hover{
+    opacity: .9;
 }
