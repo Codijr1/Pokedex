@@ -2,7 +2,6 @@
     font-family: 'pokemonfont';
     src: url(/css/css/pokemonfont.ttf);
 }
-
 body{
     font-family: 'pokemonfont';
     color: #0e0e0e; 
@@ -11,11 +10,12 @@ body{
     font-size: 40px;
     text-align: left;
     height: 100vh;
+    width: 100vw;
     overflow-y: hidden;
     margin: 0;
     min-width: 450px;
-}
 
+}
 .slaking{
     position: fixed;
     height: auto;
@@ -26,16 +26,17 @@ body{
     bottom: 10px;
     padding-right: 2px;
 }
-
 /*BUTTON STYLES*/
 .button{
     font-family: inherit;
-    width: 186px;
+    width: 30vw;
+    max-width: 190px;
     height: 64px;
     background-color: #dec69f;
     border-color: #d95939;
     border-radius: 20px;
     transition: .045s;
+    overflow-x: hidden;
 }
 .button:hover{
     scale: 1.05;
@@ -52,43 +53,51 @@ body{
     padding-left: 10px;
     margin: 0;
     height: 100vh;
+    width: auto;
 }
-
 /*MODAL WINDOW*/
-#modal-container{
-    display: none;
-}
-#modal-container.visible{
+#modalcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
-    padding: 20px;
-    box-sizing: border-box;
-    top: 5%;
-    right: 5%;
-    width: 70%;
-    max-width: 650px;
-    height: 60%;
-    color: #0e0e0e;
-    background: #0e0e0e4d;
-    border-radius: 5px;
-    z-index: 999; 
-    overflow: hidden; 
-    display: grid;
-    text-align: center;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #00000033;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
 }
-.modal-content{
+#modalcontainer.visible{
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 9999;
+}
+.modalcontent{
     position: relative;
-    background-color:#0e0e0e4d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #dec69f;
+    height: 50%;
+    width: auto;
+    max-width: 50vw;
+    min-width: fit-content;
     padding: 20px;
-    border-radius: 5px;
-    max-height: 80%;
+    font-size: 50%;
+    border: 2px solid #d95939;
+    border-radius: 20px;
     overflow: hidden;
 }
-.modal-close{
+.closemodal{
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 10px;
     cursor: pointer;
-}
-.modal-close:hover{
-    opacity: .9;
+    background-color: #dec69f;
+    border: none;
+    font: inherit;
 }
