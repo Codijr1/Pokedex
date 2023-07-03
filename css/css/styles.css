@@ -101,3 +101,10 @@ body{
     border: none;
     font: inherit;
 }
+img{
+    height: 200px;
+    width: auto;
+}
+h1{
+    font-size: 30px;
+}
