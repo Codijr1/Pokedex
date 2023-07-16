@@ -2,10 +2,6 @@
     font-family: 'pokemonfont';
     src: url(/css/css/pokemonfont.ttf);
 }
-@font-face {
-    font-family: 'pokemonfont';
-    src: url(/css/css/pokemonfont.ttf);
-}
 body{
     font-family: 'pokemonfont';
     color: #0e0e0e; 
@@ -33,14 +29,13 @@ body{
 /*BUTTON STYLES*/
 .button{
     font-family: inherit;
-    width: 30vw;
-    max-width: 190px;
+    width: fit-content;
     height: 64px;
     background-color: #dec69f;
     border-color: #d95939;
     border-radius: 20px;
     transition: .045s;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .button:hover{
     scale: 1.05;
@@ -55,6 +50,7 @@ body{
     list-style-type: none;
     overflow-y: scroll;
     padding-left: 10px;
+    padding-top: 5px;
     margin: 0;
     height: 100vh;
     width: auto;
