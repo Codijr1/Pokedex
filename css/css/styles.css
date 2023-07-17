@@ -85,7 +85,7 @@ body{
     height: 50%;
     width: auto;
     max-width: 50vw;
-    min-width: fit-content;
+    min-width: 380px;
     padding: 20px;
     font-size: 50%;
     border: 2px solid #d95939;
