@@ -1,4 +1,3 @@
-# javascriptproject
 # Pokedex App
 
 This Pokedex App is a very simple web app which allows users to explore and search for information about first generation Pokemon.
