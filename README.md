@@ -20,7 +20,7 @@ This Pokedex App is a very simple web app which allows users to explore and sear
 2. Extract the contents if you downloaded the ZIP file
 3. Open the `index.html` file in your web browser
 
-You can also access the live app online at https://example.com/pokedex-app
+You can also access the live app online at https://codijr1.github.io/Pokedex/
 
 ## Created Using
 

@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'pokemonfont';
-    src: url(/css/css/pokemonfont.ttf);
-}
+    src: url('/css/css/pokemonfont.ttf');
+  }
 body{
     font-family: 'pokemonfont';
     color: #0e0e0e; 
